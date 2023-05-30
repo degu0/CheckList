@@ -6,61 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/clipboard.ico" type="image/x-icon">
     <title>CheckList</title>
 </head>
 
 <body>
     <section>
-        <div class="div-title">
-            <h1 class="title">CheckList</h1>
+        <h1 class="title">CheckList</h1>
+        <div class="content">
+            <div class="content--add-item">
+                <input type="text" id="input-cadastre" placeholder="Digite sua nova task">
+                <button onclick="newTask()" id="btn-cadastre" title="Clique aqui para adicionar uma nova task">
+                    <i class="fa-solid fa-plus fa-sm"></i>
+                </button>
+            </div>
+            <div>
+                <ol id="to-do-list">
+                </ol>
+            </div>
         </div>
-        <div class="input-checklist">
-            <input type="text" id="input-cadastre">
-            <input type="submit" value="Cadastrar" id="button">
-        </div>
-        <div class="the-checklist">
-            <div class="checkbox">
-                <div>
-                    <input type="checkbox" name="checkboxTest" id="t1">
-                    <label for="t1">Test</label><br>
-                </div>
-                <div>
-                    <input type="submit" value="-" class="ablitys">
-                </div>
-            </div>
-            <hr>
-            <div class="checkbox">
-                <div>
-                    <input type="checkbox" name="checkboxTest" id="t1">
-                    <label for="t1">Test</label><br>
-                </div>
-                <div>
-                    <input type="submit" value="-" class="ablitys">
-                </div>
-            </div>
-            <hr>
-            <div class="checkbox">
-                <div>
-                    <input type="checkbox" name="checkboxTest" id="t2">
-                    <label for="t2">Test</label><br>
-                </div>
-                <div>
-                    <input type="submit" value="-" class="ablitys">
-                </div>
-            </div>
-            <hr>
-            <div class="checkbox">
-                <div>
-                    <input type="checkbox" name="checkboxTest" id="t3">
-                    <label for="t3">Test</label><br>
-                </div>
-                <div>
-                    <input type="submit" value="-" class="ablitys">
-                </div>
-            </div>
-            <hr>
     </section>
-    <script src="script/script.js"></script>
 </body>
-
+<script src="script/script.js"></script>
 </html>
